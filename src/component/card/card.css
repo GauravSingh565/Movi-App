@@ -1,0 +1,85 @@
+@import url("https://fonts.googleapis.com/css2?family=KoHo:wght@300&display=swap");
+.cardDiv {
+  font-family: "KoHo", sans-serif;
+  height: auto;
+  width: 300px;
+  background-color: #22254c;
+  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.7);
+  overflow: hidden;
+  cursor: pointer;
+  position: relative;
+}
+.overView {
+  position: absolute;
+  background-color: #fff;
+  top: 0;
+  overflow: auto;
+  max-height: 100%;
+  left: 0;
+  bottom: 0;
+  color: #111;
+  padding: 20px;
+  transform: translateY(100%);
+}
+.cardDiv:hover .overView {
+  transform: translateY(0);
+  transition: all 0.4s ease;
+}
+.imgDiv {
+  height: 350px;
+  width: 300px;
+}
+.imgDiv img {
+  height: 100%;
+  width: 100%;
+}
+.details {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px 10px;
+}
+.overView p {
+  margin-top: 1rem;
+}
+.rating {
+  background-color: #22254b;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+.rating.green {
+  color: rgb(83, 236, 83);
+}
+.rating.red {
+  color: red;
+}
+.rating.orange {
+  color: orange;
+}
+
+@media (max-width: 650px) {
+  .cardDiv {
+    margin-left: 100px !important;
+  }
+}
+@media (max-width: 550px) {
+  .cardDiv {
+    margin-left: 100px !important;
+  }
+}
+@media (max-width: 520px) {
+  .cardDiv {
+    margin-left: 60px !important;
+  }
+}
+@media (max-width: 414px) {
+  .cardDiv {
+    margin-left: 30px !important;
+  }
+}
+@media (max-width: 400px) {
+  .cardDiv {
+    margin-left: 15px !important;
+  }
+}

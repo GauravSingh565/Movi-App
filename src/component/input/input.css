@@ -1,0 +1,21 @@
+@import url("https://fonts.googleapis.com/css2?family=KoHo:wght@300&display=swap");
+
+input {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  font-family: "KoHo", sans-serif;
+  font-size: 1rem;
+  padding: 10px 20px;
+  border: none;
+  background-color: #22254c;
+  box-shadow: 2px 4px 20px rgba(0, 0, 0, 0.7);
+  border-radius: 20px;
+  color: whitesmoke;
+}
+input:focus {
+  outline: none;
+}
+input::placeholder {
+  color: whitesmoke;
+}
